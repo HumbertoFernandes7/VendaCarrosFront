@@ -1,0 +1,31 @@
+<div class="container">
+    <form [formGroup]="formularioLogin" >
+        <div class="mb-3 mt-5">
+          <label for="login" class="form-label">Login</label>
+          <input
+            type="login" 
+            formControlName="login"
+            class="form-control" 
+            id="login" 
+            aria-describedby="login"
+            name="login"
+            required>
+          
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input
+          formControlName="senha"
+            type="password"
+            class="form-control"
+            id="senha"
+            required>
+           
+        </div>
+        <button 
+            type="submit"
+            class="btn btn-primary"
+            (click)="realizaLogin()"
+            >Login</button>
+      </form>
+</div>
